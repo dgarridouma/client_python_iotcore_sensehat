@@ -1,0 +1,4 @@
+cryptography==36.0.2
+pyjwt==2.3.0
+paho-mqtt==1.5.1
+sense-emu==1.1
