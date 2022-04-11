@@ -161,7 +161,7 @@ def main():
         msg['temperature']=sense.temperature
         msg['humidity']=sense.humidity
         msg['pressure']=sense.pressure
-        msg['timestamp']=datetime.datetime.now()
+        msg['when']=datetime.datetime.now()
         json_data=json.dumps(msg,default=str)
         lock.acquire()
         sense.show_message("{:.2f}".format(sense.temperature)+' '+"{:.2f}".format(sense.pressure)+' '+"{:.2f}".format(sense.humidity), text_colour=yellow, back_colour=blue, scroll_speed=0.05)
